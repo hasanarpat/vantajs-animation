@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.TRUNK({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          spacing: 1.5,
+          chaos: 3.0,
+          color: 0xd21f46,
+          backgroundAlpha: 0.0,
+        });
+      });
+      $(window).scroll(() => {
+        parallax();
+      });
+      const parallax = () => {
+        var scroll = $(windows).scrollTop();
+        $("first").css("");
+      };
+    </script>
+  </head>
+  <body>
+    <div class="a">
+      <div class="first flex">
+        <div id="vanta"></div>
+        <div class="info">
+          <p>Lorem, ipsum sit.</p>
+          <h1>Responsive layouts don’t have to be a struggle</h1>
+        </div>
+      </div>
+      <div class="second flex">
+        <h3>Quality Designs</h3>
+        <div class="second--inner">
+          <div class="second--inner-one">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
+              vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
+              felis. Sociis natoque penatibus et magnis dis.
+            </p>
+          </div>
+          <div class="second--inner-two">
+            <p>
+              Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
+              amet luctus venenatis. Turpis in eu mi bibendum neque egestas
+              congue quisque egestas. Pellentesque sit amet porttitor eget dolor
+              morbi non.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="third">
+        <div class="third-inner flex">
+          <div class="third-one">
+            <h3>Made Custom for you</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="third-two"><img src="./image-01.jpg" alt="01" /></div>
+        </div>
+      </div>
+      <div class="forth">
+        <div class="forth-inner flex">
+          <div class="forth-one"><img src="./image-01.jpg" alt="01" /></div>
+          <div class="forth-two">
+            <h3>Made Custom for you</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
